@@ -19,7 +19,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"TCKimlikNo\": 12345678901, \"Ad\": \"Ali\", \"Soyad\": \"Veli\", \"DogumYili\": 1990 }",
+					"raw": "{ \r\n    \"TCKimlikNo\": 12345678901, \r\n    \"Ad\": \"Ali\", \r\n    \"Soyad\": \"Veli\", \r\n    \"DogumYili\": 1990 \r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -27,17 +27,43 @@
 					}
 				},
 				"url": {
-					"raw": "http://18.206.114.217:3000/verify",
+					"raw": "http://3.121.230.112/verify",
 					"protocol": "http",
 					"host": [
-						"18",
-						"206",
-						"114",
-						"217"
+						"3",
+						"121",
+						"230",
+						"112"
 					],
-					"port": "3000",
 					"path": [
 						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Doğrula Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://3.121.230.112/ping",
+					"protocol": "http",
+					"host": [
+						"3",
+						"121",
+						"230",
+						"112"
+					],
+					"path": [
+						"ping"
 					]
 				}
 			},
