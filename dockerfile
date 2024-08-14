@@ -6,4 +6,6 @@ COPY . .
 
 RUN go build -o kimlik-dogrulama api
 
-CMD [ "./kimlik-dogrulama" ]
+ENV GIN_MODE=release
+
+CMD ["./kimlik-dogrulama"]
