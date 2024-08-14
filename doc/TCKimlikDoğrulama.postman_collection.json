@@ -10,10 +10,16 @@
 			"name": "Doğrula",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"TCKimlikNo\": 12345678901,\r\n  \"Ad\": \"Ali\",\r\n  \"Soyad\": \"Veli\",\r\n  \"DogumYili\": 1990\r\n}\r\n",
+					"raw": "{ \"TCKimlikNo\": 12345678901, \"Ad\": \"Ali\", \"Soyad\": \"Veli\", \"DogumYili\": 1990 }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,10 +27,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/verify",
+					"raw": "http://18.206.114.217:3000/verify",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"18",
+						"206",
+						"114",
+						"217"
 					],
 					"port": "3000",
 					"path": [
