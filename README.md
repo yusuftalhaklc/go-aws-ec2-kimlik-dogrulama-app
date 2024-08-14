@@ -1,10 +1,14 @@
+## Amazon Route 53 Public IP Redirection
+
+I used Amazon Route 53 to redirect the EC2 public IP address to the domain `yusuftalhaklc.tech`.
+
 ## Endpoints
 
 ### Ping Endpoint
 
 Bu endpoint, servisin çalıştığını doğrulamak için kullanılır.
 
-- **URL:** `http://3.121.230.112/ping`
+- **URL:** `http://yusuftalhaklc.tech/ping`
 - **Method:** `GET`
 - **Response:**
   - HTTP Status Code: `200 OK`
@@ -13,7 +17,7 @@ Bu endpoint, servisin çalıştığını doğrulamak için kullanılır.
 
 Bu endpoint, verilen bilgilerin geçerliliğini doğrulamak için kullanılır.
 
-- **URL:** `http://3.121.230.112/verify`
+- **URL:** `http://yusuftalhaklc.tech/verify`
 - **Method:** `POST`
 - **Request Body:**
   ```json
