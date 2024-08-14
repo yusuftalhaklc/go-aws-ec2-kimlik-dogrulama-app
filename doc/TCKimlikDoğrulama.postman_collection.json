@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "5f160161-5ca3-4122-92be-320d4166b0dc",
+		"name": "TCKimlikDoğrulama",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27159195"
+	},
+	"item": [
+		{
+			"name": "Doğrula",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"TCKimlikNo\": 12345678901,\r\n  \"Ad\": \"Ali\",\r\n  \"Soyad\": \"Veli\",\r\n  \"DogumYili\": 1990\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/verify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"verify"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,8 @@
+base_url: "https://tckimlik.nvi.gov.tr/Service/KPSPublic.asmx"
+http_method: "POST"
+content_type: "application/soap+xml; charset=utf-8"
+xsi: "http://www.w3.org/2001/XMLSchema-instance"
+xsd: "http://www.w3.org/2001/XMLSchema"
+soap12: "http://www.w3.org/2003/05/soap-envelope"
+xml_name: "xml:\"TCKimlikNoDogrula\""
+xmlns: "xml:\"xmlns,attr\""
